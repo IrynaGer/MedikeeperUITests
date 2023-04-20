@@ -62,7 +62,7 @@ public class LoginPage extends BasePage {
 
     public void verifyErrorMessage(String expectedMessage) {
         String message =  getErrorMessage().getText();
-        Assert.assertEquals(getErrorMessage(), message);
+        Assert.assertEquals(expectedMessage, message);
 
     }
 

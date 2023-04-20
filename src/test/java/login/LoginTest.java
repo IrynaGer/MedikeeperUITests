@@ -22,7 +22,9 @@ public class LoginTest extends BaseTest {
         loginPage.getInputUsername().sendKeys("tttt");
         loginPage.getInputPassword().sendKeys("aaa");
         loginPage.getSubmitButton().click();
-        loginPage.verifyErrorMessage("                    Sorry but the login information that you entered is incorrect\n");
+        loginPage.verifyErrorMessage("cancel\n" +
+                "close\n" +
+                "Error! You no longer have access to this system, if you have any questions please contact your administrator.");
 
     }
 

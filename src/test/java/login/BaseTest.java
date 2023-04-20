@@ -33,6 +33,7 @@ public abstract class BaseTest {
     }
 
     static WebDriver createDriver() {
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
